@@ -5,7 +5,7 @@ main:
 
 sidebar-category:
   - title: "Plan"
-    url: "Plan"
+    url: "/Plan"
   - title: "Study"
     children:
       - title: "Test"
