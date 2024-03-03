@@ -2,7 +2,7 @@
 layout: single
 title: "Git Blog"
 categories:
-  - Plan
+  - GitBlog
 ---
 
 1. navigation.yml - Category 정의
