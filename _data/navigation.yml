@@ -1,7 +1,13 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
+  - title: "여기에 뭘 넣으면 좋을까"
     url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+
+  - title: "정보처리기사"
+    url: "/exam"
+  - title: "Azure"
+    url: "/Azure"
+  
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
