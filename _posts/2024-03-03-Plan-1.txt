@@ -1,4 +1,4 @@
---
+---
 layout: single
 title: "Git Blog, Category 생성 과정"
 categories:
