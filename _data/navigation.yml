@@ -10,6 +10,8 @@ sidebar-category:
     children:
       - title: "Test"
         url: "/Test"
+      - title: "Git Blog"
+        url: "/GitBlog"
       - title: "정보처리기사"
         url: "/exam"
       - title: "Azure"
