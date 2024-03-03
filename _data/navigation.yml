@@ -4,6 +4,8 @@ main:
     url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
 
 sidebar-category:
+  - title: "Plan"
+    url: "Plan"
   - title: "Study"
     children:
       - title: "Test"
