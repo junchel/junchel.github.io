@@ -7,7 +7,8 @@ main:
     url: "/exam"
   - title: "Azure"
     url: "/Azure"
-  
+  - title: "Test"
+    url: "/Test"
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
