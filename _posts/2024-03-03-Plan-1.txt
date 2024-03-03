@@ -1,0 +1,93 @@
+--
+layout: single
+title: "Git Blog, Category 생성 과정"
+categories:
+  - Plan
+---
+
+1. navigation.yml - Category 정의
+2. Post - Category 추가
+3. Page - Category에 맞는 Post가 포함되도록 정의
+4. Category - Page 연결
+5. _config.yml을 수정하여 SideBar 위치에 Category 표시
+
+---
+1. navigation.yml - Category 정의
+Category 속성을 찾아 갈 수 있도록 navigation 정의
+---
+  ---
+  main:
+  - title: "여기에 뭘 넣으면 좋을까"
+    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+
+  sidebar-category:
+    - title: "Plan"
+      url: "Plan"
+    - title: "Study"
+      children:
+        - title: "Test"
+          url: "/Test"
+        - title: "정보처리기사"
+          url: "/exam"
+        - title: "Azure"
+          url: "/Azure"
+  ---
+---
+2.Post - Category 추가
+---
+  ---
+layout: single
+title: "Git Blog, Category 생성 과정"
+categories:
+  - Plan
+  ---
+---
+3. Page - Category에 맞는 Post가 포함되도록 정의
+---
+  ---
+- root/_pages 하위에 작성 ex) "category-plan.md"
+- layout은 archive로 작성
+- liquid for문은 category 클릭시 plan category를 가진 Post만 표시하는 기능
+
+---
+title: "Plan"
+layout: archive
+permalink: /Plan
+---
+
+{% assign posts = site.categories.Plan %}
+{% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
+  ---
+---
+4. _config.yml을 수정하여 SideBar 위치에 Category 표시
+---
+  ---
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: # true
+      share: true
+      related: true
+    sidebar:
+      nav: "sidebar-category"
+  ---
+---
+문제점
+---
+  ---
+1. post 안에서 sidebar(category)가 안보임.
+  ---
+---
+할 일
+---
+  ---
+1. post 안에서 sidebar(category)가 보이게 하기.
+2. 자기소개에 사진 넣기.
+3. 블로그 최상단 배너에 사진넣기
+  ---
