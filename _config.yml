@@ -292,3 +292,4 @@ defaults:
       related: true
     sidebar:
       nav: "sidebar-category"
+      nav: "sidebar-category-plan"
